@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #f48b8b;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #main-container {
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .demo-box {
+        background-color: #ffffff;
+        border-radius: 4px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        font-weight: 600;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #container {
+        padding: 30px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;   /* spacing between 1-2-3-4-5 */
+        min-height: 200px;
+      }
+
+      .number {
+        width: 80px;
+        height: 80px;
+        background: #1e88e5;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        letter-spacing: 4px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 600px) {
+        .number {
+          width: 60px;
+          height: 60px;
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <h2 class="header">Flexbox Parent Properties</h2>
+      <div class="demo-box">
+        <div id="container">
+          <div class="number">1</div>
+          <div class="number">2</div>
+          <div class="number">3</div>
+          <div class="number">4</div>
+          <div class="number">5</div>
+        </div>
+      </div>
