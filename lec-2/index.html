@@ -3,58 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basic</title>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        }
+        #container.b{
+            cursor: pointer;
+            text-decoration: none;
+        }
+        #container input{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        #container button{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f48b8b;
+            color: white;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 500px) {
+            #container{
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <table border="2"cellspacing="5" cellpadding="4" >
-            <tr border ="2" cellspacing="6">
-                <th colspan="5">Weekly Class Time Table</th>
-            </tr>
-          <tr>
-            <tr>
-                <th rowspan="3" >Day</th>
-            </tr>
-            <tr>
-                <th colspan="4">Time</th>
-            </tr>
-           
-          </tr>
-          <tr>
-            <th>9.00 - 10.00</th>
-            <th>10.00 - 11.00</th>
-            <th>11.00 - 12.00</th>
-            <th>12.00 - 1.00</th>
-          </tr>
-          <tr>
-            <tr>
-                <th>Monday</th>
-                <td>HTML</td>
-                <td rowspan="2">CSS</td>
-                <td rowspan="2">JAVASCRIPT</td>
-                <td>Practice</td>
-            </tr>
-            <tr>
-                <th>Tuesday</th>
-                 <td>HTML</td>
-                
-                <td>Revision</td>
-            </tr>
-            </tr>
-            <tr>
-                <th>Wednesday</th>
-                 <td colspan="2">Lab work</td>
-                <td>JAVASCRIPT</td>
-                <td>Test</td>
-            </tr>
-            <tr>
-                <th>Thursday</th>
-                 <td>HTML</td>
-                <td>CSS</td>
-                <td colspan="2">Practice work</td>
-            </tr>
-          </tr>
-        </table>
+    <div id="nav">
+        <div id="container">
+            <h1 class="item">
+                Navbar
+            </h1>
+            <b class="item">
+                home
+            </b>
+            <b class="item">
+                about
+            </b>
+            <b class="item">
+                contact
+            </b>
+            <input type="text" placeholder="Search">
+            <button id="search">Search</button>
+        </div>
     </div>
     
 </body>
