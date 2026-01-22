@@ -3,69 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        #nav{
-            display: flex;
-            justify-content: space-between;
-        }
-        #container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 50px;
-        }
-        #container.b{
-            cursor: pointer;
-            text-decoration: none;
-        }
-        #container input{
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-        }
-        #container button{
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            background-color: #f48b8b;
-            color: white;
-            cursor: pointer;
-        }
-        @media screen and (max-width: 500px) {
-            #container{
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            
-        }
-    </style>
+    <title>Tailwind css</title>
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
-    <div id="nav">
-        <div id="container">
-            <h1 class="item">
-                Navbar
-            </h1>
-            <b class="item">
-                home
-            </b>
-            <b class="item">
-                about
-            </b>
-            <b class="item">
-                contact
-            </b>
-            <input type="text" placeholder="Search">
-            <button id="search">Search</button>
-        </div>
+    <div class="bg-blue-600 h-[100px]">
+        Hello
     </div>
     
 </body>
